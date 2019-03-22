@@ -1,15 +1,41 @@
+/*
+#C33C54
+#254E70
+#37718E
+#8EE3EF
+#AEF3E7
+
+#112433 - dark color
+*/
+
+
 .navbar_container {
+    font-family: 'Muli', sans-serif;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 
-    background-color: red;
+    background-color: #254E70;
+
     height: 40px;
-
+    color: #AEF3E7;
 }
 
 .navbar_container li {
     list-style-type: none;
     margin-right: 20px;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar_container li:hover {
+    background-color: #C33C54;
 }
