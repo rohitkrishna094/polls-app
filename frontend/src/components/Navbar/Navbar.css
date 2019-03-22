@@ -37,5 +37,9 @@
 }
 
 .navbar_container li:hover {
-    background-color: #C33C54;
+    background-color: #1f405c;
+}
+
+.hvr-underline-reveal::before {
+    background: #C33C54;
 }

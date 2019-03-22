@@ -6,11 +6,11 @@ class Navbar extends Component {
     return (
       <nav>
         <ul className="navbar_container">
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Login</li>
-          <li>Register</li>
-          <li>Logout</li>
+          <li className="hvr-underline-reveal hvr-forward">Home</li>
+          <li className="hvr-underline-reveal hvr-forward">Profile</li>
+          <li className="hvr-underline-reveal hvr-forward">Login</li>
+          <li className="hvr-underline-reveal hvr-forward">Register</li>
+          <li className="hvr-underline-reveal hvr-forward">Logout</li>
         </ul>
       </nav>
     );
