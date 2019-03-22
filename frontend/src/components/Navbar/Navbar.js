@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink, withRouter } from 'react-router-dom';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -6,15 +7,25 @@ class Navbar extends Component {
     return (
       <nav>
         <ul className="navbar_container">
-          <li className="hvr-underline-reveal hvr-forward">Home</li>
-          <li className="hvr-underline-reveal hvr-forward">Profile</li>
-          <li className="hvr-underline-reveal hvr-forward">Login</li>
-          <li className="hvr-underline-reveal hvr-forward">Register</li>
-          <li className="hvr-underline-reveal hvr-forward">Logout</li>
+          <li className="hvr-underline-reveal hvr-forward">
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li className="hvr-underline-reveal hvr-forward">
+            <NavLink to="/profile">Profile</NavLink>
+          </li>
+          <li className="hvr-underline-reveal hvr-forward">
+            <NavLink to="/login">Login</NavLink>
+          </li>
+          <li className="hvr-underline-reveal hvr-forward">
+            <NavLink to="/register">Register</NavLink>
+          </li>
+          <li className="hvr-underline-reveal hvr-forward">
+            <NavLink to="/logout">Logout</NavLink>
+          </li>
         </ul>
       </nav>
     );
   }
 }
 
-export default Navbar;
+export default withRouter(Navbar);
