@@ -1,0 +1,1 @@
+This is a polls app where users can create polls and get feedback on their questions.
