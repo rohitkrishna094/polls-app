@@ -1,4 +1,4 @@
-.login_loginCard {
+.register_registerCard {
     margin-top: 100px;
     /* border: 1px solid red; */
     width: 250px;
@@ -7,7 +7,7 @@
     font-size: 18px;
 }
 
-.login_heading {
+.register_heading {
     align-self: stretch;
     height: 60px;
     display: flex;
@@ -22,7 +22,7 @@
     color: #AEF3E7;
 }
 
-.login_formField {
+.register_formField {
     border: 1px solid #AEF3E7;
     height: 150px;
 
@@ -32,7 +32,7 @@
     justify-content: center;
 }
 
-.login_formField input[type=text] {
+.register_formField input[type=text] {
     /* border: 1px solid yellow; */
     /* margin-top: -10px; */
     border-top-left-radius: 3px;
@@ -44,12 +44,12 @@
     padding: 10px;
 }
 
-.login_formField input[type=text]:focus {
+.register_formField input[type=text]:focus {
     border: 2px solid #C33C54;
     outline: none;
 }
 
-.login_formField input[type=password] {
+.register_formField input[type=password] {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     border-top: 1px solid #C33C54;
@@ -57,7 +57,7 @@
     padding: 10px;
 }
 
-.login_formField input[type=password]:focus {
+.register_formField input[type=password]:focus {
     border: 2px solid #C33C54;
     outline: none;
 }
@@ -85,7 +85,7 @@ button:hover {
     color: #AEF3E7;
 }
 
-.login_error {
+.register_error {
     margin-top: 20px;
     font-size: 14px;
     color: red;
