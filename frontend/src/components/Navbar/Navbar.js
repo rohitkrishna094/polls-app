@@ -19,9 +19,7 @@ class Navbar extends Component {
           <li className="hvr-underline-reveal hvr-forward">
             <NavLink to="/register">Register</NavLink>
           </li>
-          <li className="hvr-underline-reveal hvr-forward">
-            <NavLink to="/logout">Logout</NavLink>
-          </li>
+          <li className="hvr-underline-reveal hvr-forward">Logout</li>
         </ul>
       </nav>
     );

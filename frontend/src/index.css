@@ -18,6 +18,7 @@ body {
   -moz-osx-font-smoothing: grayscale; */
   background-color: #112433;
   color: #8EE3EF;
+  font-family: 'Muli', sans-serif;
 }
 
 code {
