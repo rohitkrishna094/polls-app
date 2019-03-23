@@ -1,30 +1,47 @@
 .register_registerCard {
-    margin-top: 100px;
-    /* border: 1px solid red; */
-    width: 250px;
+    --height-from-top: 100px;
+    --card-width: 250px;
+    --heading-font-size: 18px;
+    --heading-height: 60px;
+    --heading-border-radius: 7px;
+
+    --formField-height: 150px;
+    --formField-input-border-radius: 3px;
+    --formField-input-padding: 10px;
+    --register-button-padding: 15px 10px;
+    --register-button-font-size: 18px;
+    --register-button-border-radius: 7px;
+
+    --error-margin-top: 20px;
+    --error-font-size: 14px;
+}
+
+.register_registerCard {
+    margin-top: var(--height-from-top);
+    width: var(--card-width);
     display: flex;
     flex-direction: column;
-    font-size: 18px;
 }
 
 .register_heading {
+    font-size: var(--heading-font-size);
     align-self: stretch;
-    height: 60px;
+    height: var(--heading-height);
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border: 1px solid #AEF3E7;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border: 1px solid var(--primary-color);
+    border-top-left-radius: var(--heading-border-radius);
+    border-top-right-radius: var(--heading-border-radius);
 
-    background-color: #254E70;
-    color: #AEF3E7;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
 }
 
 .register_formField {
-    border: 1px solid #AEF3E7;
-    height: 150px;
+    border: 1px solid var(--primary-color);
+    height: var(--formField-height);
 
     display: flex;
     flex-direction: column;
@@ -33,60 +50,53 @@
 }
 
 .register_formField input[type=text] {
-    /* border: 1px solid yellow; */
-    /* margin-top: -10px; */
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: var(--formField-input-border-radius);
+    border-top-right-radius: var(--formField-input-border-radius);
     text-decoration: none;
-    /* border: 5px solid pink; */
     border: none;
-    border-bottom: 1px solid #C33C54;
-    padding: 10px;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: var(--formField-input-padding)
 }
 
 .register_formField input[type=text]:focus {
-    border: 2px solid #C33C54;
+    border: 2px solid var(--secondary-color);
     outline: none;
 }
 
 .register_formField input[type=password] {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-top: 1px solid #C33C54;
+    border-bottom-left-radius: var(--formField-input-border-radius);
+    border-bottom-right-radius: var(--formField-input-border-radius);
+    border: 1px solid var(--secondary-color);
     border: none;
-    padding: 10px;
+    padding: var(--formField-input-padding);
 }
 
 .register_formField input[type=password]:focus {
-    border: 2px solid #C33C54;
+    border: 2px solid var(--secondary-color);
     outline: none;
 }
 
-button {
+.register_button {
     border: none;
-    padding: 15px 10px;
-    background-color: #254E70;
-    color: #AEF3E7;
+    padding: var(--register-button-padding);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
     cursor: pointer;
-    font-size: 18px;
-    border: 1px solid #AEF3E7;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-}
-
-button:hover {
-    background-color: #fff;
+    font-size: var(--register-button-font-size);
+    border: 1px solid var(--primary-color);
+    border-bottom-right-radius: var(--register-button-border-radius);
+    border-bottom-left-radius: var(--register-button-border-radius);
 }
 
 .hvr-fade:hover,
 .hvr-fade:focus,
 .hvr-fade:active {
-    background-color: #C33C54;
-    color: #AEF3E7;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .register_error {
-    margin-top: 20px;
-    font-size: 14px;
-    color: red;
+    margin-top: var(--error-margin-top);
+    font-size: var(--error-font-size);
+    color: var(--error-color);
 }

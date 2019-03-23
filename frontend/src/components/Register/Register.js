@@ -10,8 +10,8 @@ class Register extends Component {
           <input type="text" placeholder="USERNAME" />
           <input type="password" placeholder="PASSWORD" />
         </div>
-        <button className="hvr-fade hvr-bob">register</button>
-        <span className="register_error" hidden="true">
+        <button className="hvr-fade hvr-bob register_button">register</button>
+        <span className="register_error" hidden>
           errors
         </span>
       </div>

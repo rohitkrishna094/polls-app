@@ -1,11 +1,8 @@
-/*
-
-#112433 - dark color
-*/
-
+nav {
+    --height: 40px;
+}
 
 nav a {
-    color: #C33C54 #254E70 #37718E #8EE3EF #AEF3E7;
     text-decoration: none;
     color: inherit;
 }
@@ -21,10 +18,10 @@ nav a {
     align-items: center;
     padding: 0;
 
-    background-color: #254E70;
+    background-color: var(--bg-color);
 
-    height: 40px;
-    color: #AEF3E7;
+    height: var(--height);
+    color: var(--primary-color);
 }
 
 .navbar_container li {
@@ -38,9 +35,9 @@ nav a {
 }
 
 .navbar_container li:hover {
-    background-color: #1f405c;
+    background-color: var(--bg-secondary-color);
 }
 
 .hvr-underline-reveal::before {
-    background: #C33C54;
+    background: var(--secondary-color);
 }

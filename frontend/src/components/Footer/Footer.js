@@ -9,39 +9,39 @@ class Footer extends Component {
         <div className="footer_siteNavigation">
           <ul>
             <li>
-              <a href="">Terms</a>
+              <a href="/">Terms</a>
             </li>
             <li>
-              <a href="">Privacy</a>
+              <a href="/">Privacy</a>
             </li>
             <li>
-              <a href="">Security</a>
+              <a href="/">Security</a>
             </li>
             <li>
-              <a href="">About</a>
+              <a href="/">About</a>
             </li>
           </ul>
         </div>
         <div className="footer_socialContacts">
           <ul>
             <li>
-              <a href="http://linkedin.com" target="_blank">
-                <i class="fab fa-linkedin" style={{ color: '#0077B5' }} />
+              <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin" style={{ color: '#0077B5' }} />
               </a>
             </li>
             <li>
-              <a href="http://github.com" target="_blank">
-                <i class="fab fa-github" style={{ color: 'white' }} />
+              <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github" style={{ color: 'white' }} />
               </a>
             </li>
             <li>
-              <a href="http://medium.com" target="_blank">
-                <i class="fab fa-medium" style={{ color: 'white' }} />
+              <a href="http://medium.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-medium" style={{ color: 'white' }} />
               </a>
             </li>
             <li>
-              <a href="http://youtube.com" target="_blank">
-                <i class="fab fa-youtube" style={{ color: '#ee0000' }} />
+              <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-youtube" style={{ color: '#ee0000' }} />
               </a>
             </li>
           </ul>

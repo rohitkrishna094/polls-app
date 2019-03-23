@@ -10,8 +10,8 @@ class Login extends Component {
           <input type="text" placeholder="USERNAME" />
           <input type="password" placeholder="PASSWORD" />
         </div>
-        <button className="hvr-fade hvr-bob">Login</button>
-        <span className="login_error" hidden="true">
+        <button className="hvr-fade hvr-bob login_button">Login</button>
+        <span className="login_error" hidden>
           errors
         </span>
       </div>

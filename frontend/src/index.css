@@ -8,6 +8,17 @@
 #112433 - dark color
 */
 
+:root {
+  --bg-color: #254E70;
+  --bg-secondary-color: #1f405c;
+  --bg-color-light: #37718E;
+  --bg-color-dark: #112433;
+  --primary-color: #AEF3E7;
+  --secondary-color: #C33C54;
+  --footer-color: #7da8a1;
+  --error-color: red;
+}
+
 body {
   margin: 0;
   padding: 0;
