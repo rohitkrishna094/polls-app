@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Register.css';
+import { connect } from 'react-redux';
 
 class Register extends Component {
   state = { username: '', password: '' };
@@ -44,4 +45,5 @@ class Register extends Component {
     );
   }
 }
-export default Register;
+
+export default connect()(Register);
