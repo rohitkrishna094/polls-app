@@ -11,7 +11,7 @@ export const signup = credentials => {
   return (dispatch, getState) => {
     // call backend service here
     const { username, password } = credentials;
-    const url = `${baseUrl}/auth/signup`;
+    const url = `${baseUrl}/auth/register`;
     fetch(url, {
       method: 'POST',
       body: JSON.stringify({ username, password }),
@@ -34,7 +34,7 @@ export const login = credentials => {
   return (dispatch, getState) => {
     // call backend servic ehere
     const { username, password } = credentials;
-    const url = `${baseUrl}/auth/signin`;
+    const url = `${baseUrl}/auth/login`;
 
     fetch(url, {
       method: 'POST',
