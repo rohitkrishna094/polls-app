@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Register.css';
+import { signup } from '../../store/actions/authActions';
 import { connect } from 'react-redux';
 
 class Register extends Component {
@@ -13,6 +14,8 @@ class Register extends Component {
 
   onClick = e => {
     console.log(this.state.username, this.state.password);
+    const credentials = { username: this.state.username, password: this.state.password };
+    this.props.signup(credentials);
   };
 
   render() {
@@ -45,5 +48,18 @@ class Register extends Component {
     );
   }
 }
-
-export default connect()(Register);
+const mapStateToProps = state => {
+  return {
+    signedUp: state.auth.signedUp,
+    error: state.auth.error
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    signup: signUpCredentials => dispatch(signup(signUpCredentials))
+  };
+};
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Register);
