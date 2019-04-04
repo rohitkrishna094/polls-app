@@ -20,10 +20,10 @@ export const signup = credentials => {
       .then(res => res.json())
       .then(data => {
         let error = {};
-        if (data.status !== 200) {
-          error = data.error;
+        if (!data.success) {
+          error = data.msg;
           dispatch({ type: SIGNUP_ERROR, payload: { error } });
-        } else if (data.status === 200) {
+        } else if (data.success) {
           dispatch({ type: SIGNUP_SUCCESS, payload: { username } });
         }
       });
